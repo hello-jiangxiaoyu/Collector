@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  accounts:
+    build: .
+    container_name: collector
+    networks:
+      - collector
+
+networks:
+  collector:
+    driver: bridge

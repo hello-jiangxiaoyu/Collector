@@ -1,0 +1,9 @@
+
+[input]
+name = "file"
+path = "./access.log"
+
+
+[output]
+name = "clickhouse"
+table = ""
