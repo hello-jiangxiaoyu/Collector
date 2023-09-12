@@ -50,7 +50,7 @@ func Run() error {
 			continue // 过滤掉空行
 		}
 
-		logLine := make(map[string]any, 0)
+		logLine := make(map[string]any)
 		if err = json.Unmarshal([]byte(line.Text), &logLine); err != nil {
 			fmt.Println("unmarshal err", err)
 			continue
